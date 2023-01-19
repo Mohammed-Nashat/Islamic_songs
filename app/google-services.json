@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "988291356623",
+    "project_id": "islamic-songs-82f15",
+    "storage_bucket": "islamic-songs-82f15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988291356623:android:bffaf3f4744c2cb233a4ba",
+        "android_client_info": {
+          "package_name": "com.example.islamicsongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988291356623-v463hbg9m472vr21rc7u46ueuldc79gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.islamicsongs",
+            "certificate_hash": "971cc0cc12e48990cb7f6078a400aaddae07c1a8"
+          }
+        },
+        {
+          "client_id": "988291356623-8m6o06o3kk2v2ffaf97u4cjlmcudmig9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP5IuSNb7C3RXEz8xjd1BfOsIDQg-Y4VQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988291356623-8m6o06o3kk2v2ffaf97u4cjlmcudmig9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

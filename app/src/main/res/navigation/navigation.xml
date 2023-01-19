@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    android:label="@string/title_main_screen"
+    app:startDestination="@id/mainAuthenticationFragment">
+    <fragment
+        android:id="@+id/mainAuthenticationFragment"
+        android:name="com.example.islamicsongs.authentication.MainAuthenticationFragment"
+        android:label="MainAuthenticationFragment" >
+        <action
+            android:id="@+id/action_mainAuthenticationFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_mainAuthenticationFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.islamicsongs.authentication.SignInFragment"
+        android:label="SignInFragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_mainScreenFragment2"
+            app:destination="@id/mainScreenFragment2" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.islamicsongs.authentication.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_mainScreenFragment2"
+            app:destination="@id/mainScreenFragment2" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment2"
+        android:name="com.example.islamicsongs.main_screen.MainScreenFragment"
+        android:label="MainScreenFragment" />
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Islamic Songs</string>
+    <string name="title_anasheed">أناشيد إسلامية</string>
+    <string name="title_doaa">أدعية</string>
+    <string name="title_azcar">أذكار</string>
+    <string name="title_qasayid">قصائد </string>
+    <string name="title_main_screen">الصفحة الرئيسية</string>
+    <string name="btn_text_sign_in">Sign in</string>
+    <string name="btn_text_sign_up">Sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name=""></string>-->
+</resources>

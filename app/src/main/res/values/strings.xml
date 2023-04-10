@@ -1,13 +1,27 @@
 <resources>
     <string name="app_name">Islamic Songs</string>
-    <string name="title_anasheed">أناشيد إسلامية</string>
-    <string name="title_doaa">أدعية</string>
-    <string name="title_azcar">أذكار</string>
-    <string name="title_qasayid">قصائد </string>
-    <string name="title_main_screen">الصفحة الرئيسية</string>
     <string name="btn_text_sign_in">Sign in</string>
     <string name="btn_text_sign_up">Sign up</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="do_not_have_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account">"Already have an account? "</string>
+    <string name="name_of_music">Sami Yousuf</string>
+    <string name="name_of_songer">Salam Aliake</string>
+    <string name="duration">4:00</string>
+    <string name="elapsed_time">1:34</string>
+    <string name="txv_browse">Browse</string>
+    <string name="txv_playLists">PlayLists</string>
+    <string name="txv_favorites">Favorites</string>
+    <string name="no_data">No Data</string>
+    <string name="mix_for_you">Mix For You</string>
+
+
+    //Audio Files
+    <string name="alFikro_ya_insan_law_atlaktaho">Al Fikro Ya Insan Law Atlaktaho</string>
+    <!--    <string name=""></string>-->
     <!--    <string name=""></string>-->
 </resources>

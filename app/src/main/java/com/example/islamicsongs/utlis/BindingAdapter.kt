@@ -1,71 +1,50 @@
-//package com.example.azcar.utlis
-//
-//import android.view.View
-//import android.widget.ImageView
-//import android.widget.TextView
-//import androidx.databinding.BindingAdapter
-//import androidx.recyclerview.widget.RecyclerView
-//import com.example.azcar.R
-//import com.example.azcar.adapters.QuraanAdapter
-//import com.example.azcar.model.Surah
-//import com.example.azcar.screens.main.QuraanApiStatus
-//
-//
-//@BindingAdapter("arabicNameS")
-//fun TextView.arabicName(surah: Surah?){
-//    surah?.let {
-//        text= it.englishName
-//    }
-//}
-//
-//
-//@BindingAdapter("englishbicNameS")
-//fun TextView.englishbicName(surah: Surah?){
-//    surah?.let {
-//        text= it.name
-//    }
-//}
-//
-//@BindingAdapter("numberS")
-//fun TextView.number(surah: Surah?){
-//    surah?.let {
-//        text= it.number.toString()
-//    }
-//}
-//
-//@BindingAdapter("revelationTypeS")
-//fun TextView.revelationTypeS(surah: Surah?){
-//    surah?.let {
-//        text= it.revelationType
-//    }
-//}
-//
-//
-//@BindingAdapter("listData")
-//
-//fun bindRecyclerView(recyclerView: RecyclerView, data: List<Surah>?) {
-//    val adapter = recyclerView.adapter as QuraanAdapter
-//    adapter.submitList(data)
-//}
-//
-//
-//
-//@BindingAdapter("quraanApiStatus")
-//fun bindStatus(statusImageView: ImageView, status: QuraanApiStatus?) {
-//    when (status) {
-//        QuraanApiStatus.LOADING -> {
-//            statusImageView.visibility = View.VISIBLE
-//            statusImageView.setImageResource(R.drawable.loading_animation)
-//        }
-//        QuraanApiStatus.ERROR -> {
-//            statusImageView.visibility = View.VISIBLE
-//            statusImageView.setImageResource(R.drawable.ic_connection_error)
-//        }
-//        QuraanApiStatus.DONE -> {
-//            statusImageView.visibility = View.GONE
-//        }
-//        else -> {}
-//    }
-//}
-//
-//
+package com.example.islamicsongs.utlis
+
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.databinding.BindingAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.example.islamicsongs.adapters.PlayListAdapter
+import com.example.islamicsongs.ui.main_screen.PlayListsAdapter
+import com.example.islamicsongs.data.models.PLayLists
+import com.example.islamicsongs.data.models.PlayList
+
+
+// Bind Image for Play_Music_Fragment & Images for RecyclerView PlayLists
+@BindingAdapter("sourceImage")
+fun ImageView.setImage(pLayLists: PLayLists?){
+    pLayLists?.let {
+        setImageResource(it.imageOfSinger)
+    }
+}
+
+@BindingAdapter("listOfData")
+fun bindRecyclerViewPlayLists(recyclerView: RecyclerView, data: List<PLayLists>?) {
+    val adapter = recyclerView.adapter as PlayListsAdapter
+    adapter.submitList(data)
+}
+
+@BindingAdapter("listOfData")
+fun bindRecyclerViewPlayList(recyclerView: RecyclerView, data: List<PlayList>) {
+    val adapter = recyclerView.adapter as PlayListAdapter
+    adapter.submitList(data)
+}
+
+
+@BindingAdapter("nameOfSinger")
+fun TextView.setNameOfSinger(playList: PlayList){
+        text= playList.nameOfSinger
+    }
+
+@BindingAdapter("nameOfSound")
+fun TextView.setNameOfSound2(playList: PlayList){
+    text= playList.nameOfSound
+}
+
+@BindingAdapter("duration")
+fun TextView.setDuration2(playList: PlayList){
+        text= playList.duration.toString()
+    }
+
+
+

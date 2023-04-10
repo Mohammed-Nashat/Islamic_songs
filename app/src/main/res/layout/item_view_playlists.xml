@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="playlists"
+            type="com.example.islamicsongs.data.models.PLayLists" />
+        <variable
+            name="clickListener"
+            type="com.example.islamicsongs.ui.main_screen.PlayListsListener" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> clickListener.onClick(playlists)}">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView"
+            android:layout_width="134dp"
+            android:layout_height="176dp"
+            android:layout_marginStart="@dimen/text_size_normal"
+            android:scaleType="center"
+            tools:src="@drawable/image_maher_zain"
+            app:sourceImage="@{playlists}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImgeSquare"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+
+
+
+
+
+
+
